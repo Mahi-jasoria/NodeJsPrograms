@@ -1,0 +1,22 @@
+function addition(val) {
+return (val+5, false);
+}
+function substract(val) {
+return (val-3, false);
+}
+function multiplication(val) {
+return (val*5, false);
+}
+addition(5,function(addRes,err){
+if(!err) {
+substract(addRes,function(subRes,err){
+if(!err) {
+multiplication(subRes,function(multiRes,err){
+if(!err) {
+console.log("Result::: "+multiRes);
+}
+	});
+}
+	});
+}
+	});
