@@ -1,0 +1,24 @@
+function addition(val,callback){
+return callback(val+5, false);
+}
+
+function substract(val,callback){
+return callback(val-5, false);
+}
+
+function multiplication(val,callback){
+return callback(val*5, false);
+}
+addition(5,function(addRes,err){
+if(!err){
+substract(addRes,function(subRes,err){
+if(!err){
+multiplication(subRes,function(multiRes,err){
+if(!err){
+console.log("Result::: "+multiRes);
+}
+});
+}
+});
+}
+});
