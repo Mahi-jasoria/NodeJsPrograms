@@ -1,0 +1,7 @@
+function display() {
+setTimeout(function show(){
+console.log("show function calling");
+},5000);
+console.log("Display function Calling");
+}
+display();
