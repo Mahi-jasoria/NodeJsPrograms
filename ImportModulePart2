@@ -1,0 +1,29 @@
+let books = require('./ImportModulePart1');
+
+let musicAlbums = [
+    { artist: "aaa", title: "AAA" },
+    { artist: "bbb", title: "BBB" }
+];
+
+let topIdeas = function() {
+    return [musicAlbums[0], books.favoriteBook()];
+}
+ 
+let gifts = function() {
+    console.log("Your recommended gifts are:\n");
+
+    for (let i = 0, len = musicAlbums.length; i < len; i++) {
+        console.log(musicAlbums[i].title + " by " + musicAlbums[i].artist);
+    }
+
+    let recommendedBooks = books.getBookRecommendations();
+
+    for (let i = 0, len = recommendedBooks.length; i < len; i++) {
+        console.log(recommendedBooks[i].title + " by " + recommendedBooks[i].author);
+    }
+
+    }
+
+console.log("Welcome to our gift shop.\n");
+
+gifts()
