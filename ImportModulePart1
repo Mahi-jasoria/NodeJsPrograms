@@ -1,0 +1,17 @@
+const favoriteAuthor = { name: "MK", genre: "Jasoria", nationality: "Indian" };
+
+function favoriteBook() {
+    return { title: "SSS", author: "sss" };
+}
+ 
+function getBookRecommendations() {
+    return [
+        {id: 1, title: "PPP", author: "ppp"},
+        {id: 2, title: "QQQ", author: "qqq"},
+        {id: 3, title: "RRR", author: "rrr"}
+    ];
+}
+ 
+module.exports.favoriteAuthor = favoriteAuthor;
+module.exports.favoriteBook = favoriteBook;
+module.exports.getBookRecommendations = getBookRecommendations;
