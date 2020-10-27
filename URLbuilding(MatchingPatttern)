@@ -1,0 +1,13 @@
+var express = require("express");
+
+var router = express.Router);
+
+router.get('/',(req,res)=>{ 
+    res.send("Get requests for products");
+});
+
+router.get('/search-product/:key([0-9]{4})',(req,res)=>{ 
+    res.send("Searched Product "+req.params.key);
+});
+
+module.exports = router;
