@@ -1,0 +1,12 @@
+const express = require("express")
+const router = express.Router()
+
+const EmployeeController = require('../Controller(CRUDoperation-2)')
+
+router.get('/', Controller(CRUDoperation-2).index)
+router.post('/show', Controller(CRUDoperation-2).show)
+router.post('/store', Controller(CRUDoperation-2).store)
+router.post('/update', Controller(CRUDoperation-2).update)
+router.post('/delete', Controller(CRUDoperation-2).destroy)
+
+module.exports = router;
