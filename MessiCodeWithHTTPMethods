@@ -1,0 +1,32 @@
+var express = require("express");
+
+var products = require('./routes/products');
+var app= express();
+
+app.use('/products', products);
+
+app.post('/create-product', (req,res)=> {
+res.send("List of Users");
+});
+
+app.put('/update-product', (req,res)=> {
+res.send("List of Users");
+});
+
+app.get('/read-all-product', (req,res)=> {
+res.send("List of Users");
+});
+
+app.get('/get-product-details', (req,res)=> {
+const userObj = {
+id: 10,
+name: "ABC",
+lastName: "Tutorials",
+status: true
+}
+res.send(userObj);
+});
+
+app.delete('/delete-user', (req,res)=> {
+res.send("List of Users");
+});
