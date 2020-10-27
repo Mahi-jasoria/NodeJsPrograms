@@ -1,0 +1,13 @@
+var express = require("express");
+
+var router = express.Router);
+
+router.get('/',(req,res)=>{ 
+    res.send("Get requests for products");
+});
+
+router.get('/get-product-details/:id',(req,res)=>{ 
+    res.send("Get requests for Specific product "+req.params.id);
+});
+
+module.exports = router;
