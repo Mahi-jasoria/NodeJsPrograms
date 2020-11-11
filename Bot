@@ -1,0 +1,5 @@
+const botBuilder = require('claudia-bot-builder');
+
+module.exports = botBuilder(request => `Hello from space explorer bot! Your request was: ${request.text}`);
+claudia create --region us-east-1 --api-module bot --configure-fb-bot
+
